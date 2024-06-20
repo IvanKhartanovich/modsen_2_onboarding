@@ -1,0 +1,67 @@
+name: onboarding
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.4.1 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.1.6
+  flutter_localizations:
+    sdk: flutter
+  freezed: ^2.5.2
+  freezed_annotation: ^2.4.1
+  intl: any
+  smooth_page_indicator: ^1.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  build_runner: ^2.4.11
+
+flutter_gen:
+  output: lib/gen/
+  line_length: 80
+  parse_metadata: false
+
+  integrations:
+    flutter_svg: false
+    flare_flutter: false
+    rive: false
+    lottie: false
+
+  assets:
+    enabled: true
+    inputs:
+      - assets/images/
+    outputs:
+      style: dot-delimiter
+      class_name: Assets
+    exclude: []
+  fonts:
+    enabled: true
+    inputs:
+      - assets/fonts/
+    outputs:
+      class_name: FontFamily
+
+flutter:
+  uses-material-design: true
+  generate: true
+  assets:
+    - assets/images/
+  fonts:
+    - family: SF
+      fonts:
+        - asset: assets/fonts/SFProText-Regular.ttf
+        - asset: assets/fonts/SFProText-Semibold.ttf
+    - family: Abel
+      fonts:
+        - asset: assets/fonts/Abel-Regular.ttf
+    - family: Anek
+      fonts:
+        - asset: assets/fonts/AnekMalayalam-Bold.ttf
